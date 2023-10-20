@@ -1,0 +1,185 @@
+:root {
+   --header-color: black;
+   --font-color: white;
+   --bg-color: lightblue;
+}
+body{
+	background-color: white;
+}
+header {
+	background: var(--header-color);
+	height: 300px;
+}
+a {
+	color: white;
+	text-decoration: none;
+}
+a:hover {
+	color: coral;
+}
+#user_nav{
+	float: right;
+	padding: 20px;
+	font-size: 30px;
+	text-align: center;
+	margin: 20px;
+	margin-right: 40px;
+}
+#user_nav td{
+	padding: 15px;
+	margin-right: 20px;
+	border-right: 2px solid green;
+	border-left: 2px solid black;
+	border-top: 2px solid black;
+	border-bottom: 2px solid black;
+}
+#user_nav td:last-child{
+	border-right-color: black;
+}	
+#gen_nav p{
+	position: relative;
+	left: 150px;
+	top: -20px;
+	font-size: 30px;
+}
+#welcome {
+    position: relative;
+    left: 1250px;
+    top: -80px;
+    font-size: 30px;
+    color: green;
+}
+#ball {
+	position: static;
+	width: 400px;
+	height: 200px;
+	padding: 10px;
+}
+#green_horizontal_line {
+	width: 1600px;
+	height: 2px;
+	background-color: green;
+	margin: 15px auto;
+}
+main div{
+	display: flex;
+	margin: 20px;
+}
+main {
+	position: relative;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.btn {
+	grid-area: btn;
+}
+.topic {
+	grid-area: topic;
+	text-align: center;
+	color: green;
+}
+.title{
+	grid-area: title;
+}
+.image {
+	grid-area: image;
+	width: 160px;
+	height: 160px;
+}
+.host {
+	grid-area: host;
+}
+.time {
+	grid-area: st;
+}
+.date{
+	grid-area: date;
+}
+.locate {
+	grid-area: loc;
+}
+.deta {
+	grid-area: details;
+}
+.desc {
+	grid-area: desc;
+	font-size: 20px;
+	font-family: 'Times New Roman', Times, serif;
+}
+.rsvp {
+	display: flex;
+	flex-direction: column;
+}
+.rsvp p {
+	font-style: italic;
+}
+.yes {
+	background-color: green;
+}
+.no {
+	background-color: red;
+}
+.maybe {
+	background-color: blue;
+}
+article {
+	display: grid;
+	text-align: left;
+	align-items: center;
+	grid-template-areas: 
+	"title title btn btn"
+	"image host host ."
+	"image date date date"
+	". st st ."
+	". loc loc loc"
+	"details . . ."
+	"desc desc desc desc";
+	font-size: 25px;
+	grid-gap: 5px;
+	width: 100vh;
+}
+button {
+	margin: 2px;
+	background-color: black;
+	border: 1px solid gray;
+	border-radius: 2px;
+	color: white;
+	width: 100px;
+	height: 40px;
+	font-size: 25px;
+}
+button:hover {
+	background-color: white;
+	color: black;
+	border: 4px solid black;
+}
+footer img {
+	width: 25px;
+	height: 25px;
+	float:  right;
+	margin: 5px;
+	margin-right: 20px;
+}
+footer {
+	position: relative;
+	top: 5px; 
+    background: black;
+    width: 100%;
+    height: 80px;
+}
+footer a{
+	font-size: 25px;
+	margin-top: 10px;
+	padding:  20px;
+}
+#contact {
+	float: left;
+	text-align: center;
+	margin-top: 10px;
+}
+#link_logos {
+	float:  right;
+	justify-content: center;
+}

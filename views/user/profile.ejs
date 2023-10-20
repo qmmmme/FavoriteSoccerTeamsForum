@@ -1,0 +1,64 @@
+<%- include('../partials/header.ejs', {cs: 'profile'})%>
+
+<%if(connects.length) {%>
+
+    <table class="display">
+        <h2><%= user.firstName%>'s Connections</h2>
+        
+        <tr>
+            <th>Connection</th>
+            <th>Category</th>
+            <th>Actions</th>
+        </tr>
+        <%connects.forEach(connect => {%>
+            <tr>
+                <td><a href= '/connections/<%= connect.id%>' class='profile'><p><%= connect.title%></p></a></td>
+                <td><%= connect.topic%></td>
+                <td>
+					<form class="pf">
+						<div><button class="pf" type="submit" formmethod="GET" formaction="/connections/<%= connect._id%>/edit">Update</button></div>
+						<div><button class="pf" type="submit" formmethod="POST" formaction="/connections/<%= connect._id%>?_method=DELETE">Delete</button></div>
+					</form>	
+                </td>
+            </tr>
+          
+        <%})
+        } else {%>
+    </table> 
+    
+    
+    <p class="profile">You have not create any connections</p>
+<%}%>
+
+<!-- for the RSVP table -->
+<%if(rsvps.length) {%>
+
+    <table class="display">
+        <h2><%= user.firstName%>'s RSVP</h2>
+        
+        <tr>
+            <th>Connection</th>
+            <th>Category</th>
+            <th>Goings</th>
+        </tr>
+        <%rsvps.forEach(rsvp => {%>
+            <tr>
+                <td><a href= '/connections/<%= rsvp.connection_id.id%>' class='profile'><p><%= rsvp.connection_id.title%></p></a></td>
+                <td><%= rsvp.connection_id.topic%></td>
+                <td>
+					<%= rsvp.decision%>
+                </td>
+            </tr>
+          
+        <%})
+} else {%>
+   
+</table> 
+    
+    <p class="profile">You have not make any decision to any connection yet!</p>
+<%}%>
+
+
+</body>
+
+</html>

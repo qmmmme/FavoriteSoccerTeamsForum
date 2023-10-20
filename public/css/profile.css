@@ -1,0 +1,208 @@
+:root {
+    --header-color: black;
+    --font-color: white;
+    --bg-color: lightblue;
+  }
+  body{
+   background-color: white;
+  }
+  header {
+   background: var(--header-color);
+   height: 300px;
+  }
+  a {
+   color: white;
+   text-decoration: none;
+  }
+  a:hover {
+   color: coral;
+  }
+  #user_nav{
+   float: right;
+   padding: 20px;
+   font-size: 30px;
+   text-align: center;
+   margin: 20px;
+   margin-right: 40px;
+  }
+  #user_nav td{
+   padding: 15px;
+   margin-right: 20px;
+   border-right: 2px solid green;
+   border-left: 2px solid black;
+   border-top: 2px solid black;
+   border-bottom: 2px solid black;
+  }
+  #user_nav td:last-child{
+   border-right-color: black;
+  }	
+  #gen_nav p{
+   position: relative;
+   left: 150px;
+   top: -20px;
+   font-size: 30px;
+  }
+  #welcome {
+    position: relative;
+    left: 1250px;
+    top: -80px;
+    font-size: 30px;
+    color: green;
+}
+  #ball {
+   position: static;
+   width: 400px;
+   height: 200px;
+   padding: 10px;
+  }
+  #green_horizontal_line {
+   width: 1600px;
+   height: 2px;
+   background-color: green;
+   margin: 15px auto;
+  }
+  main {
+   height: 58vh;
+   background-color: green;
+  }
+  main p{
+   font-size: 30px;
+   padding-top: 30px;
+   color: gold;
+   font-family: sans-serif;
+   text-align: center;
+   justify-content: center;
+   margin-left: 20px;
+    margin-top: 0px;
+  }
+  footer img {
+   width: 25px;
+   height: 25px;
+   float:  right;
+   margin: 5px;
+   margin-right: 20px;
+  }
+  footer {
+     background: black;
+     width: 100%;
+     height: 80px;
+  }
+  footer a{
+   font-size: 25px;
+   margin-top: 10px;
+   padding:  20px;
+  }
+  #contact {
+   float: left;
+   text-align: center;
+   margin-top: 10px;
+  }
+  #link_logos {
+   float:  right;
+   justify-content: center;
+  }
+  .profile {
+    margin-left: 20px;
+    color: black;
+  }
+  
+  .display {
+    width: 50%;
+    border-collapse: collapse; 
+    
+  }
+  .display th, td{
+    text-align: left;
+    border: 1px solid gray;
+    border-collapse: collapse;
+    padding-left: 5px;
+  }
+  .display a{
+    display: block;
+  }
+  .display td {
+    width: 33%;
+  }
+  
+  .btn {
+    width: 40px;
+    height: 20px;
+    color: white;
+    background-color: black;
+  }
+  .success {
+      background: green;
+      color: #fff;
+      width: 100%;
+      text-align: center;
+      padding: 10px 10px;
+    }
+  .error {
+      background: yellow;
+      color: black;
+      width: 100%;
+      text-align: center;
+      padding: 10px 10px;
+  }
+  .loginForm {
+    display: block;
+    color: black;
+    font-size: 20px;
+    width: 20%;
+    text-align: left;
+    padding: 10px 10px;
+    margin: auto auto;
+  }
+  .loginForm input {
+    width: 100%;
+    height: 35px;
+    font-size: 20px;
+  }
+  .signUpForm {
+    display: block;
+    color: black;
+    font-size: 20px;
+    width: 20%;
+    text-align: left;
+    padding: 10px 10px;
+    margin: auto auto;
+  }
+  .signUpForm input {
+    width: 100%;
+    height: 35px;
+    font-size: 20px;
+  }
+  button {
+    font-size: 20px;
+    float: left;
+    border-radius: 4px;
+    background-color: white;
+  }
+  button:hover {
+    background: coral;
+  }
+  .pf button{
+    width: 60px;
+    height: 20px;
+    font-size: 15px;
+    margin: 2px;
+    color: white;
+    background-color: black;
+  }
+  .pf button:hover{
+    color: coral;
+  }
+  form.pf {
+    display: flex;
+    flex-direction: row;
+  }
+  h1 {
+    position: relative;
+    left: 80%;
+    color: blue
+  }
+  h2{
+    margin: 10px;
+    color: blue;
+  }
+  
